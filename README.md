@@ -1,15 +1,16 @@
 # html-styled
+
 > HTML for React with styled-system props
 
-## Getting started 
+## Getting started
+
 Provides React components for HTML elements which allow you to use the [Styled System API](https://styled-system.com/api/).
 
 ```
 npm install html-styled styled-system styled-components
 ```
 
-or 
-
+or
 
 ```
 yarn add html-styled styled-system styled-components
@@ -28,21 +29,16 @@ const App = ({ ...props }) => (
   <div>
     <h1>Hello world!</h1>
     <P color="red" p={[1, 2]}>
-      This is a paragraph element from html-styled. 
-      It's now red and has responsive padding - easy!
-     </P>
+      This is a paragraph element from html-styled. It's now red and has
+      responsive padding - easy!
+    </P>
   </div>
 );
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
 Whenever you want to use an HTML element, just import it from `html-styled` in uppercase and you can instantly use the `styled-system` style props!
-
-## Supported elements
-
-- [x] `<p>` as `<P>`
-- [x] `<div>` as `<Div>`
 
 ## FAQ
 
