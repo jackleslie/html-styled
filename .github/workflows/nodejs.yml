@@ -12,10 +12,6 @@ jobs:
         with:
           node-version: 12.x
           registry-url: "https://registry.npmjs.org"
-      - name: set github credentials
-        run: |
-          git config user.email "jackleslie@protonmail.com"
-          git config user.name "Jack Leslie"
       - name: install and build
         run: |
           yarn
@@ -26,7 +22,12 @@ jobs:
           yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: release
+      - name: commit release
         run: |
+          git config user.email "jackleslie@protonmail.com"
+          git config user.name "Jack Leslie"
           git commit -a -m "[skip ci] chore: release"
-          git push
+      - name: push release
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
