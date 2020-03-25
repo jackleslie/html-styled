@@ -17,8 +17,10 @@ export default [
   "H5",
   "H6",
   "Header",
+  "Hgroup",
   "Nav",
   "P",
   "Section",
   "Address",
+  "Main"
 ];
