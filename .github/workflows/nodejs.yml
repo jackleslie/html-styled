@@ -24,5 +24,9 @@ jobs:
         run: |
           yarn release
           yarn publish
+      - name: release
+        run: |
+          git commit -a -m "[skip ci] chore: release"
+          git push
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
