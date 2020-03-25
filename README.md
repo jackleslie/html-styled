@@ -29,7 +29,7 @@ const App = ({ ...props }) => (
   <div>
     <h1>Hello world!</h1>
     <P color="red" p={[1, 2]}>
-      This is a paragraph element from html-styled. It's now red and has
+      This is a paragraph element from html-styled. It is now red and has
       responsive padding - easy!
     </P>
   </div>
@@ -38,7 +38,7 @@ const App = ({ ...props }) => (
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
-Whenever you want to use an HTML element, just import it from `html-styled` in uppercase and you can instantly use the `styled-system` style props!
+Whenever you want to use an HTML element, just import it from `html-styled` and you can instantly use the `styled-system` style props!
 
 ## FAQ
 
