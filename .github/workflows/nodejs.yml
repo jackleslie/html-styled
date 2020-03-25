@@ -29,7 +29,6 @@ jobs:
       - name: commit release
         run: |
           git commit -a -m "[skip ci] chore: release"
-      - name: push release
-        uses: ad-m/github-push-action@master
+          git push
         with:
           github_token: ${{ secrets.GH_TOKEN }}
