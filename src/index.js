@@ -14,10 +14,8 @@ import {
 } from "styled-system";
 import elements from "./elements";
 
-const output = {};
-
-elements.forEach(element => {
-  const StyledElement = styled(element.toLowerCase())`
+const output = elements.reduce((obj, element) => {
+  const StyledElement = styled(element)`
     ${space}
     ${color}
     ${typography}
@@ -30,22 +28,37 @@ elements.forEach(element => {
     ${shadow}
   `;
 
-  output[element] = ({ ...props }) => <StyledElement {...props} />;
-});
+  return {
+    ...obj,
+    [output[element.toUpperCase()]]: ({ ...props }) => (
+      <StyledElement {...props} />
+    )
+  };
+}, {});
 
 export const {
-  Address,
-  Article,
-  Aside,
-  Footer,
-  Header,
+  A,
+  ARTICLE,
+  ASIDE,
+  BLOCKQUOTE,
+  DD,
+  DIV,
+  DL,
+  DT,
+  FIGCAPTION,
+  FIGURE,
+  FOOTER,
   H1,
   H2,
   H3,
   H4,
   H5,
-  H,
+  H6,
+  HEADER,
+  HGROUP,
+  NAV,
   P,
-  Div,
-  A
+  SECTION,
+  ADDRESS,
+  MAIN
 } = output;
