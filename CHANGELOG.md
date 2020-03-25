@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.9.0 (2020-03-25)
+
+
+### Features
+
+* reduce rewrite and more elements exposed ([46fe70a](https://github.com/jackleslie/html-styled/commit/46fe70a0199709ab48e5b78674a449d4ce8aeade))
+
 ### 1.8.4 (2020-03-25)
 
 ### 1.8.3 (2020-03-25)
