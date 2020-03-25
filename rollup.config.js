@@ -5,7 +5,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import pkg from "./package.json";
 
 // Rollup
-const input = "index.js";
+const input = "src/index.js";
 
 const globals = {
   react: "React",

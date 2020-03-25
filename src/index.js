@@ -12,23 +12,7 @@ import {
   position,
   shadow
 } from "styled-system";
-
-const elements = [
-  "Address",
-  "Article",
-  "Aside",
-  "Footer",
-  "Header",
-  "H1",
-  "H2",
-  "H3",
-  "H4",
-  "H5",
-  "H6",
-  "P",
-  "Div",
-  "A"
-];
+import elements from "./elements";
 
 const output = {};
 
