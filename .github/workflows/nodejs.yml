@@ -30,5 +30,3 @@ jobs:
         run: |
           git commit -a -m "[skip ci] chore: release"
           git push
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
