@@ -23,10 +23,7 @@ jobs:
       - name: publish
         run: |
           yarn release
+          git push --follow-tags origin master
           yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: commit release
-        run: |
-          git commit -a -m "[skip ci] chore: release"
-          git push
