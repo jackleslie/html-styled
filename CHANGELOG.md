@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.8.2 (2020-03-25)
+
+
+### Bug Fixes
+
+* git push in publish step ([8a77c08](https://github.com/jackleslie/html-styled/commit/8a77c08677db89f89d19d4954986852a249a3c9e))
+
 ### [1.9.1](https://github.com/jackleslie/html-styled/compare/v1.9.0...v1.9.1) (2020-03-25)
 
 ## [1.9.0](https://github.com/jackleslie/html-styled/compare/v1.6.1...v1.9.0) (2020-03-25)
