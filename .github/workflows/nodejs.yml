@@ -12,6 +12,10 @@ jobs:
         with:
           node-version: 12.x
           registry-url: "https://registry.npmjs.org"
+      - name: set github credentials
+        run: |
+          git config user.email "jackleslie@protonmail.com"
+          git config user.name "Jack Leslie"
       - name: install and build
         run: |
           yarn
