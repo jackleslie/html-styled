@@ -1,5 +1,6 @@
 export default [
   "a",
+  "address",
   "article",
   "aside",
   "blockquote",
@@ -18,9 +19,13 @@ export default [
   "h6",
   "header",
   "hgroup",
+  "hr",
+  "li",
+  "main",
   "nav",
+  "ol",
   "p",
+  "pre",
   "section",
-  "address",
-  "main"
+  "ul"
 ];

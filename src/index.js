@@ -38,6 +38,7 @@ const output = elements.reduce((obj, element) => {
 
 export const {
   A,
+  ADDRESS,
   ARTICLE,
   ASIDE,
   BLOCKQUOTE,
@@ -56,9 +57,13 @@ export const {
   H6,
   HEADER,
   HGROUP,
+  HR,
+  LI,
+  MAIN,
   NAV,
+  OL,
   P,
+  PRE,
   SECTION,
-  ADDRESS,
-  MAIN
+  UL
 } = output;
