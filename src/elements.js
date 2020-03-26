@@ -8,6 +8,7 @@ export default [
   "bdi",
   "bdo",
   "blockquote",
+  "body",
   "br",
   "button",
   "caption",
@@ -83,5 +84,5 @@ export default [
   "u",
   "ul",
   "var",
-  "wbr",
+  "wbr"
 ];
