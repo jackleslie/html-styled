@@ -30,4 +30,4 @@ jobs:
           yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        if: ${{ !startsWith(github.event.head_commit , '[skip ci]') }}
+        if: "!contains(github.event.head_commit.message, '[skip publish]')"
