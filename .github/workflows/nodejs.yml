@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   build:
-    if: "! contains(toJSON(github.event.commits.*.msg), '[skip-ci]')"
     runs-on: ubuntu-latest
 
     steps:
@@ -31,3 +30,4 @@ jobs:
           yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        if: ${{ !startsWith(github.event.head_commit , '[skip ci]') }}
