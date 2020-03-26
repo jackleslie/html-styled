@@ -30,9 +30,7 @@ const output = elements.reduce((obj, element) => {
 
   return {
     ...obj,
-    [output[element.toUpperCase()]]: ({ ...props }) => (
-      <StyledElement {...props} />
-    ),
+    [element.toUpperCase()]: ({ ...props }) => <StyledElement {...props} />,
   };
 }, {});
 
