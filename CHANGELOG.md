@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.9.3 (2020-03-26)
+
+
+### Bug Fixes
+
+* added badges to readme ([f76220e](https://github.com/jackleslie/html-styled/commit/f76220e8a02d852d4ef73c4e7932d64f0cc0c91d))
+
 ### 1.9.2 (2020-03-25)
 
 ## 1.9.0 (2020-03-25)
