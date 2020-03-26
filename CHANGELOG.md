@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.10.0 (2020-03-26)
+
+
+### Features
+
+* added all text content html elements ([e3274a0](https://github.com/jackleslie/html-styled/commit/e3274a0894cc3354dc64f53db01419a5b751f354))
+
 ### 1.9.4 (2020-03-26)
 
 
