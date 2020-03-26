@@ -15,18 +15,18 @@ import {
 import elements from "./elements";
 
 const output = elements.reduce((obj, element) => {
-  const StyledElement = styled(element)`
-    ${space}
-    ${color}
-    ${typography}
-    ${layout}
-    ${flexbox}
-    ${grid}
-    ${background}
-    ${border}
-    ${position}
-    ${shadow}
-  `;
+  const StyledElement = styled(element)(
+    space,
+    color,
+    typography,
+    layout,
+    flexbox,
+    grid,
+    background,
+    border,
+    position,
+    shadow
+  );
 
   return {
     ...obj,
