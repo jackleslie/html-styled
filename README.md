@@ -2,6 +2,9 @@
 
 > HTML for React with styled-system props
 
+![GitHub package.json version](https://img.shields.io/github/package-json/v/jackleslie/html-styled?color=red&logo=npm)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jackleslie/html-styled/Node%20CI?logo=github)
+
 ## Getting started
 
 Provides React components for HTML elements which allow you to use the [Styled System API](https://styled-system.com/api/).
