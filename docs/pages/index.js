@@ -16,7 +16,7 @@ import {
 
 const Home = () => (
   <BODY m={0} bg="#eee" fontFamily="system-ui">
-    <MAIN p={5}>
+    <MAIN p={[4, 5]}>
       <Head>
         <title>html-styled</title>
       </Head>
