@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.9.4 (2020-03-26)
+
+
+### Bug Fixes
+
+* replace string template with function syntax ([9f67898](https://github.com/jackleslie/html-styled/commit/9f6789808f7152da2c4fcb506e8a02b17c2274e4))
+
 ### 1.9.3 (2020-03-26)
 
 
