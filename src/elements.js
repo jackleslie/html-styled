@@ -83,5 +83,5 @@ export default [
   "u",
   "ul",
   "var",
-  "wbr"
+  "wbr",
 ];

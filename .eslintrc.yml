@@ -1,0 +1,16 @@
+extends:
+  - eslint:recommended
+  - plugin:prettier/recommended
+  - plugin:react/recommended
+env:
+  es6: true
+  node: true
+parserOptions:
+  ecmaVersion: 2019
+rules:
+  no-console: 0
+  react/display-name: 0
+overrides:
+  - files: "src/**/*.js"
+    parserOptions:
+      sourceType: module
