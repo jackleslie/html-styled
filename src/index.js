@@ -10,7 +10,7 @@ import {
   background,
   border,
   position,
-  shadow
+  shadow,
 } from "styled-system";
 import elements from "./elements";
 
@@ -30,7 +30,7 @@ const output = elements.reduce((obj, element) => {
 
   return {
     ...obj,
-    [element.toUpperCase()]: ({ ...props }) => <StyledElement {...props} />
+    [element.toUpperCase()]: ({ ...props }) => <StyledElement {...props} />,
   };
 }, {});
 
@@ -120,5 +120,5 @@ export const {
   U,
   UL,
   VAR,
-  WBR
+  WBR,
 } = output;
