@@ -28,7 +28,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { P } from "html-styled";
 
-const App = ({ ...props }) => (
+const App = () => (
   <div>
     <h1>Hello world!</h1>
     <P color="red" p={[1, 2]}>
@@ -41,7 +41,7 @@ const App = ({ ...props }) => (
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
-Whenever you want to use an HTML element, just import it from `html-styled` and you can instantly use the `styled-system` style props!
+Whenever you want to use an HTML element, just import it from `html-styled` in uppercase and you can instantly use the `styled-system` style props!
 
 ## FAQ
 
@@ -54,3 +54,7 @@ Whenever you want to use an HTML element, just import it from `html-styled` and 
 ### Is it good for bigger projects?
 
 Probably not, since it's essentially just inline css but easier and this isn't very scalable. However, you can make reusable components with them and make you're own mini design system if desired.
+
+### Why are the components in uppercase?
+
+Believe it or not, HTML element names are case insensitive, so uppercase HTML elements are actually [valid syntax](https://developer.mozilla.org/en-US/docs/Web/HTML). However, since conventionally developers use lowercase element names you can easily spot which elements you write are standard HTML and which ones are from `html-styled`. React component names are [normally just capitalised](https://reactjs.org/docs/components-and-props.html) as well, so you can also distunguish between normal components and `html-styled` components.
