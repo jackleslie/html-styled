@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.10.5 (2020-03-26)
+
+### Bug Fixes
+
+- remove uncecessary output reference ([6415436](https://github.com/jackleslie/html-styled/commit/6415436f3ad2ac80c5372c1a137073b283b01d2c))
+
 ### 1.10.4 (2020-03-26)
 
 ### 1.10.3 (2020-03-26)
