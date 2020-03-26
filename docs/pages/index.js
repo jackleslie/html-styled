@@ -53,7 +53,13 @@ const Home = () => (
         flexWrap="wrap"
         flexDirection="column"
       >
-        <H1 color="#333" mb={4} maxWidth={600} textAlign="center">
+        <H1
+          color="#333"
+          mb={4}
+          maxWidth={600}
+          textAlign="center"
+          fontWeight={600}
+        >
           Use HTML elements in React with styled-system props to prototype with
           ease!
         </H1>
@@ -65,7 +71,7 @@ const Home = () => (
           <P color={["#222", "#cb3837"]}>This text changes color responsively</P>
         `}</CODE>
         <DIV display="flex">
-          <BUTTON
+          <A
             p={3}
             m={2}
             appearance="none"
@@ -75,10 +81,11 @@ const Home = () => (
             borderRadius={5}
             fontSize={2}
             fontWeight={500}
+            href="https://github.com/jackleslie/html-styled"
           >
             GitHub
-          </BUTTON>
-          <BUTTON
+          </A>
+          <A
             p={3}
             m={2}
             appearance="none"
@@ -88,9 +95,10 @@ const Home = () => (
             borderRadius={5}
             fontSize={2}
             fontWeight={500}
+            href="https://npm.im/html-styled"
           >
             NPM
-          </BUTTON>
+          </A>
         </DIV>
       </ARTICLE>
     </MAIN>
