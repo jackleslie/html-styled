@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.10.11 (2020-03-26)
+
+### Bug Fixes
+
+- move skip ci if to step ([7a6a3d1](https://github.com/jackleslie/html-styled/commit/7a6a3d1f098004a797d70fb151ef518e3236f7ec))
+
 ### 1.10.10 (2020-03-26)
 
 ### 1.10.9 (2020-03-26)
