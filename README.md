@@ -2,7 +2,7 @@
 
 > HTML for React with styled-system props
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/jackleslie/html-styled?color=red&logo=npm)
+![npm](https://img.shields.io/npm/v/html-styled?color=red)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jackleslie/html-styled/Node%20CI?logo=github)
 
 ## Getting started
