@@ -8,7 +8,8 @@ export default ({ inline = false, ...props }) => {
     code = (
       <CODE
         borderRadius={5}
-        p={2}
+        px={2}
+        py={1}
         bg="#041B15"
         color="#eee"
         fontFamily="Menlo, monospace"

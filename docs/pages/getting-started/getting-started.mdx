@@ -27,19 +27,21 @@ import { Code, Heading, Paragraph, Button } from "../../components";
   <a href="https://styled-system.com/responsive-styles">
     Styled System's responsive style syntax
   </a>
-  . Using this, the example above becomes:
+  . With this in mind, the example above becomes:
 </Paragraph>
 
 <Code
   my={2}
->{`<p color="red" fontSize={['16px', '18px']}>Hello world!</p>`}</Code>
+>{`<P color="red" fontSize={['16px', '18px']}>Hello world!</P>`}</Code>
 
 <Paragraph>
   Now instead of using the standard style prop we have a prop for every css
   property, e.g color and fontSize. If we want to make a property responsive we
   simply pass an array of strings instead of just one string, where each element
   in the array applies the rule to a certain screen size. In this example, the
-  font size is 16px on small screens, and 18px on all larger screens.
+  font size is 16px on small screens, and 18px on all larger screens. Notice
+  that <Code inline>{`<p>`}</Code> becomes <Code inline>{`<P>`}</Code> - we'll
+  discuss this in the next section.
 </Paragraph>
 
 <Heading mt={5} mb={1}>
@@ -58,7 +60,7 @@ import { Code, Heading, Paragraph, Button } from "../../components";
 
 <Code>npm install html-styled styled-system styled-components</Code>
 
-<DIV borderLeft="solid 5px #28464B" pl={3} pt={2}>
+<DIV borderLeft="solid 5px #28464B" pl={3} pt={2} mt={3}>
   <Heading small>What are peer dependencies?</Heading>
   <Paragraph>
     These are dependencies that we rely on, but instead of bundling them in our
