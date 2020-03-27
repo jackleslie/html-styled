@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { H1, DIV, SPAN, P } from "html-styled";
+import { H1, DIV, P } from "html-styled";
 import { Layout, Button, Code } from "../components";
 
 const Home = () => (
@@ -16,14 +16,14 @@ const Home = () => (
       Use HTML elements in React with styled-system props to prototype with
       ease!
     </H1>
-    <P color="#222" fontSize={["16px", "18px"]}>
+    <P color="#28464B" fontSize={["16px", "18px"]}>
       This text changes size responsively
     </P>
-    <P color="#222" mt={0} mb={3} fontSize={4}>
+    <P color="#28464B" mt={0} mb={3} fontSize={4}>
       {String.fromCharCode("0x2195")}
     </P>
     <Code>{`
-          <P color="#222" fontSize={["16px", "18px"]}>This text changes size responsively</P>
+          <P color="#28464B" fontSize={["16px", "18px"]}>This text changes size responsively</P>
         `}</Code>
     <DIV display="flex" mt={3}>
       <Link href="/getting-started">

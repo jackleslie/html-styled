@@ -1,4 +1,4 @@
-import { DIV, P } from "html-styled";
+import { DIV } from "html-styled";
 import { Code, Heading, Paragraph, Button } from "../../components";
 
 <Heading mb={1}>Introduction</Heading>
@@ -46,22 +46,24 @@ import { Code, Heading, Paragraph, Button } from "../../components";
   Installation
 </Heading>
 
-Install <Code inline>html-styled</Code> and its peer dependencies.
+<Paragraph>
+  Install <Code inline>html-styled</Code> and its peer dependencies.
+</Paragraph>
 
 <Code mt={4} mb={0}>
   yarn add html-styled styled-system styled-components
 </Code>
 
-or
+<Paragraph>or</Paragraph>
 
 <Code>npm install html-styled styled-system styled-components</Code>
 
-<DIV borderLeft="solid 5px #555" pl={3} pt={2}>
+<DIV borderLeft="solid 5px #28464B" pl={3} pt={2}>
   <Heading small>What are peer dependencies?</Heading>
-  <P color="#222" lineHeight="1.4">
+  <Paragraph>
     These are dependencies that we rely on, but instead of bundling them in our
     package we get you to install them separately. This keeps our package size
     down and allows you to install specific versions of each dependency if you
     need to.
-  </P>
+  </Paragraph>
 </DIV>

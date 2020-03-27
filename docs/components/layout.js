@@ -57,7 +57,7 @@ export default ({ center, title, next, children }) => (
       ) : (
         <DIV display="flex" mt={3} alignItems="flex-start">
           <SECTION
-            borderLeft="solid 5px #555"
+            borderLeft="solid 5px #28464B"
             px={4}
             mr={4}
             flex={1}
@@ -69,7 +69,7 @@ export default ({ center, title, next, children }) => (
               <Link key={page} href={href}>
                 <Heading
                   small
-                  color={page === title ? "#05668D" : "#222"}
+                  color={page === title ? "#05668D" : "#28464B"}
                   cursor="pointer"
                 >
                   {page}
