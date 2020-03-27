@@ -8,7 +8,7 @@ const Home = () => (
     <H1
       color="#041B15"
       mt={5}
-      mb={4}
+      mb={5}
       maxWidth={600}
       textAlign="center"
       fontWeight={600}
@@ -25,7 +25,7 @@ const Home = () => (
     <Code>{`
           <P color="#28464B" fontSize={["16px", "18px"]}>This text changes size responsively</P>
         `}</Code>
-    <DIV display="flex" mt={3}>
+    <DIV display="flex" mt={4} mb={4}>
       <Link href="/getting-started">
         <Button>Get started</Button>
       </Link>

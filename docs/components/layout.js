@@ -14,7 +14,7 @@ export default ({ center, title, next, children }) => (
   <BODY m={0} bg="#eee" fontFamily="system-ui">
     <MAIN p={[4, 5]}>
       <Head>
-        <title>html-styled | {title}</title>
+        <title>{title ? `html-styled | ${title}` : "html-styled"}</title>
       </Head>
 
       <HEADER
@@ -73,6 +73,7 @@ export default ({ center, title, next, children }) => (
             lineHeight="2"
             bg="#eee"
             width="100%"
+            mt={[2, 4]}
           >
             {pages.map(({ page, href }) => (
               <Link key={page} href={href}>
