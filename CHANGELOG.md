@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.10.13 (2020-03-27)
+
+### Bug Fixes
+
+- trying to include custom props ([25fe4c2](https://github.com/jackleslie/html-styled/commit/25fe4c235628e46897b1da56fffa51c0712f11ae))
+
 ### 1.10.12 (2020-03-26)
 
 ### 1.10.11 (2020-03-26)
