@@ -23,7 +23,7 @@ export default ({ center, title, next, children }) => (
         flexWrap="wrap"
         justifyContent="space-between"
       >
-        <DIV display="flex" flexDirection="column" mb={3} mr={3}>
+        <DIV display="flex" flexDirection="column" mb={1} mr={3}>
           <Link href="/">
             <Heading color="#041B15" cursor="pointer">
               html-styled
