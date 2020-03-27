@@ -1,0 +1,67 @@
+import { DIV, P } from "html-styled";
+import { Code, Heading, Paragraph, Button } from "../../components";
+
+<Heading mb={1}>Introduction</Heading>
+
+<Paragraph>
+  This package is for projects using React that allows you to write HTML
+  elements in which you can pass responsive style props easily. Normally when we
+  write and style HTML elements in React we use the standard style props as
+  follows:
+</Paragraph>
+
+<Code
+  my={2}
+>{`<p style={{ color: 'red, fontSize: '18px' }}>Hello world!</p>`}</Code>
+
+<Paragraph>
+  The syntax is a little bit clunky, and gets a bit harder to read as we add
+  more and more css rules. And if we wanted to make it responsive, e.g change
+  the font size on smaller screens, we'd need to give it a class name and write
+  some bulky CSS media queries.
+</Paragraph>
+
+<Paragraph mt={0}>
+  Using this package means that we get a nicer style props syntax, and can
+  easily make this responsive using{" "}
+  <a href="https://styled-system.com/responsive-styles">
+    Styled System's responsive style syntax
+  </a>
+  . Using this, the example above becomes:
+</Paragraph>
+
+<Code
+  my={2}
+>{`<p color="red" fontSize={['16px', '18px']}>Hello world!</p>`}</Code>
+
+<Paragraph>
+  Now instead of using the standard style prop we have a prop for every css
+  property, e.g color and fontSize. If we want to make a property responsive we
+  simply pass an array of strings instead of just one string, where each element
+  in the array applies the rule to a certain screen size. In this example, the
+  font size is 16px on small screens, and 18px on all larger screens.
+</Paragraph>
+
+<Heading mt={5} mb={1}>
+  Installation
+</Heading>
+
+Install <Code inline>html-styled</Code> and its peer dependencies.
+
+<Code mt={4} mb={0}>
+  yarn add html-styled styled-system styled-components
+</Code>
+
+or
+
+<Code>npm install html-styled styled-system styled-components</Code>
+
+<DIV borderLeft="solid 5px #555" pl={3} pt={2}>
+  <Heading small>What are peer dependencies?</Heading>
+  <P color="#222" lineHeight="1.4">
+    These are dependencies that we rely on, but instead of bundling them in our
+    package we get you to install them separately. This keeps our package size
+    down and allows you to install specific versions of each dependency if you
+    need to.
+  </P>
+</DIV>

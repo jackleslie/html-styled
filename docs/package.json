@@ -14,6 +14,10 @@
     "styled-system": "^5.1.5"
   },
   "devDependencies": {
+    "@mdx-js/loader": "^1.5.8",
+    "@mdx-js/mdx": "^1.5.8",
+    "@mdx-js/react": "^1.5.8",
+    "@next/mdx": "^9.3.2",
     "babel-plugin-styled-components": "^1.10.7"
   }
 }
