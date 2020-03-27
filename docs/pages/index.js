@@ -54,6 +54,7 @@ const Home = () => (
       >
         <H1
           color="#333"
+          mt={5}
           mb={4}
           maxWidth={600}
           textAlign="center"
