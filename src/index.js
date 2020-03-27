@@ -16,6 +16,7 @@ import elements from "./elements";
 
 const output = elements.reduce((obj, element) => {
   const StyledElement = styled(element)(
+    (props) => props,
     space,
     color,
     typography,
