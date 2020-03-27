@@ -13,10 +13,10 @@ import {
   shadow,
 } from "styled-system";
 import elements from "./elements";
+import css from "./css";
 
 const output = elements.reduce((obj, element) => {
   const StyledElement = styled(element)(
-    (props) => props,
     space,
     color,
     typography,
@@ -26,7 +26,8 @@ const output = elements.reduce((obj, element) => {
     background,
     border,
     position,
-    shadow
+    shadow,
+    css
   );
 
   return {
