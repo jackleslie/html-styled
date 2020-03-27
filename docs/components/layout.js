@@ -55,15 +55,22 @@ export default ({ center, title, next, children }) => (
           {children}
         </ARTICLE>
       ) : (
-        <DIV display="flex" mt={3} alignItems="flex-start">
+        <DIV
+          display="flex"
+          mt={3}
+          alignItems="flex-start"
+          flexDirection={["column", "row"]}
+        >
           <SECTION
             borderLeft="solid 5px #28464B"
             px={4}
             mr={4}
             flex={1}
-            position="sticky"
+            position={["auto", "sticky"]}
             top="40px"
             lineHeight="2"
+            bg="#eee"
+            width="100%"
           >
             {pages.map(({ page, href }) => (
               <Link key={page} href={href}>
@@ -71,6 +78,7 @@ export default ({ center, title, next, children }) => (
                   small
                   color={page === title ? "#05668D" : "#28464B"}
                   cursor="pointer"
+                  fontSize={2}
                 >
                   {page}
                 </Heading>
