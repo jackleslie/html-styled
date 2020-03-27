@@ -2995,10 +2995,10 @@ html-entities@^1.2.0:
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
   integrity sha1-DfKTUfByEWNRXfueVUPl9u7VFi8=
 
-html-styled@^1.10.6:
-  version "1.10.6"
-  resolved "https://registry.yarnpkg.com/html-styled/-/html-styled-1.10.6.tgz#9a9abebb48a1716f5ea42798c04bcc92a2fdcf2d"
-  integrity sha512-7H7ADPUXvva3aeVHuF9S1K4jpsDV1GMHC3Pm882xJ7Ia3s2gjBzxpm95z5KjcBS3Bo6FCaSgCHmGhaHu19BgUQ==
+html-styled@^1.10.14:
+  version "1.10.14"
+  resolved "https://registry.yarnpkg.com/html-styled/-/html-styled-1.10.14.tgz#d40cd929e6441da32ad5808748611711c7f9c7ba"
+  integrity sha512-8cJ6GaaPaplnObO1AadM9R6aMVnYkj+07LAXQcyrBuaTaIinxmj4jLaW/DnzorZ/ObiMpF8qhjVOiolyfLYz3w==
 
 htmlparser2@4.0.0:
   version "4.0.0"

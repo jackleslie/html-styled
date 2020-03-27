@@ -81,6 +81,7 @@ const Home = () => (
             fontSize={2}
             fontWeight={500}
             href="https://github.com/jackleslie/html-styled"
+            textDecoration="none"
           >
             GitHub
           </A>
@@ -95,6 +96,7 @@ const Home = () => (
             fontSize={2}
             fontWeight={500}
             href="https://npm.im/html-styled"
+            textDecoration="none"
           >
             NPM
           </A>

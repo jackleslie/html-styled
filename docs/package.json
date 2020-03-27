@@ -6,7 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "html-styled": "^1.10.6",
+    "html-styled": "^1.10.14",
     "next": "9.3.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
