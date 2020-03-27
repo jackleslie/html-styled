@@ -31,16 +31,18 @@ export default ({ center, title, next, children }) => (
           </Link>
           <Heading small>{title}</Heading>
         </DIV>
-        <A
-          className="github-button"
-          href="https://github.com/jackleslie/html-styled"
-          data-icon="octicon-star"
-          data-size="large"
-          data-show-count="true"
-          aria-label="Star jackleslie/html-styled on GitHub"
-        >
-          Star
-        </A>
+        {center ? (
+          <A
+            className="github-button"
+            href="https://github.com/jackleslie/html-styled"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star jackleslie/html-styled on GitHub"
+          >
+            Star
+          </A>
+        ) : null}
       </HEADER>
 
       {center ? (

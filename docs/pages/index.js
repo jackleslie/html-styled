@@ -4,7 +4,7 @@ import { H1, DIV, P } from "html-styled";
 import { Layout, Button, Code } from "../components";
 
 const Home = () => (
-  <Layout title="HTML for React with styled-system props" center>
+  <Layout center>
     <H1
       color="#041B15"
       mt={5}
