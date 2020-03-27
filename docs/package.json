@@ -12,5 +12,8 @@
     "react-dom": "16.13.1",
     "styled-components": "^5.0.1",
     "styled-system": "^5.1.5"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.7"
   }
 }
