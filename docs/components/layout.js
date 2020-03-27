@@ -25,7 +25,7 @@ export default ({ center, title, next, children }) => (
       >
         <DIV display="flex" flexDirection="column" mb={3} mr={3}>
           <Link href="/">
-            <Heading color="#222" cursor="pointer">
+            <Heading color="#041B15" cursor="pointer">
               html-styled
             </Heading>
           </Link>

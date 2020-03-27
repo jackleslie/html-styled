@@ -9,7 +9,7 @@ export default ({ inline = false, ...props }) => {
       <CODE
         borderRadius={5}
         p={2}
-        bg="#333"
+        bg="#041B15"
         color="#eee"
         fontFamily="Menlo, monospace"
         fontSize={0}
@@ -22,7 +22,7 @@ export default ({ inline = false, ...props }) => {
         borderRadius={5}
         p={3}
         mb={4}
-        bg="#333"
+        bg="#041B15"
         color="#eee"
         fontFamily="Menlo, monospace"
         fontSize={0}

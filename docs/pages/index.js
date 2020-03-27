@@ -6,7 +6,7 @@ import { Layout, Button, Code } from "../components";
 const Home = () => (
   <Layout title="HTML for React with styled-system props" center>
     <H1
-      color="#222"
+      color="#041B15"
       mt={5}
       mb={4}
       maxWidth={600}
