@@ -15,8 +15,9 @@ export default ({ inline = false, ...props }) => {
         fontFamily="Menlo, monospace"
         fontSize={0}
         my={2}
+        whiteSpace="nowrap"
         {...props}
-      ></CODE>
+      />
     );
   } else {
     code = (
@@ -28,8 +29,9 @@ export default ({ inline = false, ...props }) => {
         fontFamily="Menlo, monospace"
         fontSize={0}
         my={2}
+        whiteSpace="pre-wrap"
         {...props}
-      ></CODE>
+      />
     );
   }
 
