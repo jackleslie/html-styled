@@ -14,6 +14,7 @@ export default ({ inline = false, ...props }) => {
         color="#eee"
         fontFamily="Menlo, monospace"
         fontSize={0}
+        my={2}
         {...props}
       ></CODE>
     );
@@ -22,11 +23,11 @@ export default ({ inline = false, ...props }) => {
       <CODE
         borderRadius={5}
         p={3}
-        mb={4}
         bg="#041B15"
         color="#eee"
         fontFamily="Menlo, monospace"
         fontSize={0}
+        my={2}
         {...props}
       ></CODE>
     );

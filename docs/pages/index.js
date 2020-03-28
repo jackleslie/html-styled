@@ -19,13 +19,10 @@ const Home = () => (
     <P color="#28464B" fontSize={["16px", "18px"]}>
       This text changes size responsively
     </P>
-    <P color="#28464B" mt={0} mb={3} fontSize={4}>
-      {String.fromCharCode("0x2195")}
-    </P>
     <Code>{`
           <P color="#28464B" fontSize={["16px", "18px"]}>This text changes size responsively</P>
         `}</Code>
-    <DIV display="flex" mt={4} mb={4}>
+    <DIV display="flex" mt={5} mb={4}>
       <Link href="/getting-started">
         <Button>Get started</Button>
       </Link>

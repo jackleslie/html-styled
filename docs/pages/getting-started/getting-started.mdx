@@ -1,5 +1,5 @@
 import { DIV } from "html-styled";
-import { Code, Heading, Paragraph, Button } from "../../components";
+import { Code, Heading, Paragraph, Button, Info } from "../../components";
 
 <Heading mb={1}>Introduction</Heading>
 
@@ -10,9 +10,7 @@ import { Code, Heading, Paragraph, Button } from "../../components";
   follows:
 </Paragraph>
 
-<Code
-  my={2}
->{`<p style={{ color: 'red, fontSize: '18px' }}>Hello world!</p>`}</Code>
+<Code> {`<p style={{ color: 'red, fontSize: '18px' }}>Hello world!</p>`}</Code>
 
 <Paragraph>
   The syntax is a little bit clunky, and gets a bit harder to read as we add
@@ -30,9 +28,7 @@ import { Code, Heading, Paragraph, Button } from "../../components";
   . With this in mind, the example above becomes:
 </Paragraph>
 
-<Code
-  my={2}
->{`<P color="red" fontSize={['16px', '18px']}>Hello world!</P>`}</Code>
+<Code>{`<P color="red" fontSize={['16px', '18px']}>Hello world!</P>`}</Code>
 
 <Paragraph>
   Now instead of using the standard style prop we have a prop for every css
@@ -52,20 +48,15 @@ import { Code, Heading, Paragraph, Button } from "../../components";
   Install <Code inline>html-styled</Code> and its peer dependencies.
 </Paragraph>
 
-<Code mt={4} mb={0}>
-  yarn add html-styled styled-system styled-components
-</Code>
+<Code>yarn add html-styled styled-system styled-components</Code>
 
 <Paragraph>or</Paragraph>
 
-<Code>npm install html-styled styled-system styled-components</Code>
+<Code mb={4}>npm install html-styled styled-system styled-components</Code>
 
-<DIV borderLeft="solid 5px #28464B" pl={3} pt={2} mt={3}>
-  <Heading small>What are peer dependencies?</Heading>
-  <Paragraph>
-    These are dependencies that we rely on, but instead of bundling them in our
-    package we get you to install them separately. This keeps our package size
-    down and allows you to install specific versions of each dependency if you
-    need to.
-  </Paragraph>
-</DIV>
+<Info title="What are peer dependencies?">
+  These are dependencies that we rely on, but instead of bundling them in our
+  package we get you to install them separately. This keeps our package size
+  down and allows you to install specific versions of each dependency if you
+  need to.
+</Info>

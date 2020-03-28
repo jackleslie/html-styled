@@ -29,7 +29,6 @@ export default ({ center, title, next, children }) => (
               html-styled
             </Heading>
           </Link>
-          <Heading small>{title}</Heading>
         </DIV>
         {center ? (
           <A
@@ -100,9 +99,11 @@ export default ({ center, title, next, children }) => (
           >
             {children}
             {next ? (
-              <Button mt={5} mx={0} href={next.href}>
-                Next: {next.title} &rarr;
-              </Button>
+              <Link href={next.href}>
+                <Button mt={5} mx={0}>
+                  Next: {next.title} &rarr;
+                </Button>
+              </Link>
             ) : null}
           </ARTICLE>
         </DIV>
