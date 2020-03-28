@@ -1,5 +1,12 @@
-import { DIV } from "html-styled";
-import { Code, Heading, Paragraph, Button, Info } from "../../components";
+import { DIV, A } from "html-styled";
+import {
+  Code,
+  Heading,
+  Paragraph,
+  Button,
+  Info,
+  Anchor,
+} from "../../components";
 
 <Heading mb={1}>Uppercase HTML elements</Heading>
 
@@ -22,13 +29,16 @@ import { Code, Heading, Paragraph, Button, Info } from "../../components";
 <Info title="Why are the component names in uppercase?">
   Believe it or not, HTML element names are actually case insensitive so
   uppercase HTML elements are{" "}
-  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">valid syntax</a>.
-  However, conventionally developers use lowercase element names; this means you
-  can easily spot which elements you write are standard HTML and which ones are
-  from <Code inline>html-styled</Code>. React component names are{" "}
-  <a href="https://reactjs.org/docs/components-and-props.html">
+  <Anchor href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+    valid syntax
+  </Anchor>
+  . However, conventionally developers use lowercase element names; this means you
+  can easily spot which elements you write are standard HTML and which ones are from{" "}
+  <Code inline>html-styled</Code>. React component names are <Anchor href="https://reactjs.org/docs/components-and-props.html">
     normally just capitalised
-  </a>{" "}
-  as well, so you can also distunguish between normal components and{" "}
-  <Code inline>html-styled</Code> components.
+  </Anchor> as well, so you can also distunguish between normal components and <Code
+    inline
+  >
+    html-styled
+  </Code> components.
 </Info>

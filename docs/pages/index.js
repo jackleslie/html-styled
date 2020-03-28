@@ -1,7 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import { DIV, H3, SPAN } from "html-styled";
-import { Layout, Button, Code, Heading, Paragraph } from "../components";
+import {
+  Layout,
+  Button,
+  Code,
+  Heading,
+  Paragraph,
+  Anchor,
+} from "../components";
 
 const Home = () => (
   <Layout center>
@@ -25,7 +32,7 @@ const Home = () => (
       borderTop="solid 2px #ddd"
       width="100%"
       mt={5}
-      mb={[5, 4]}
+      mb={5}
       pt={5}
       alignItems="center"
       justifyContent="space-evenly"
@@ -52,6 +59,12 @@ const Home = () => (
           <Code inline>{`color={["red", "blue"]}`}</Code> as a prop.
         </Paragraph>
       </DIV>
+    </DIV>
+    <DIV pt={[4, 2]} mb={0} borderTop={["solid 2px #ddd", "none"]} width="100%">
+      <Paragraph textAlign="center" fontSize={[1, 2]}>
+        Developed with <Code inline>html-styled</Code> by{" "}
+        <Anchor href="https://jackleslie.dev">Jack Leslie</Anchor>
+      </Paragraph>
     </DIV>
   </Layout>
 );
