@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.11.0 (2020-03-28)
+
+### Features
+
+- support white space css property ([6d096f8](https://github.com/jackleslie/html-styled/commit/6d096f8700e7f0d4cac90805cdbd7fc5718262b0))
+
 ### 1.10.14 (2020-03-27)
 
 ### 1.10.13 (2020-03-27)
