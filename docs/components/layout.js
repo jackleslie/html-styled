@@ -72,7 +72,7 @@ export default ({ center, title, next, children }) => (
             top="40px"
             lineHeight="2"
             bg="#eee"
-            width="100%"
+            maxWidth="100%"
             mt={[2, 4]}
           >
             {pages.map(({ page, href }) => (
