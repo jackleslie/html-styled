@@ -11,8 +11,8 @@ import {
   border,
   position,
   shadow,
-  css,
 } from "styled-system";
+import { css } from "@styled-system/css";
 import elements from "./elements";
 import additionalCss from "./css";
 
