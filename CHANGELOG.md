@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.11.1 (2020-03-29)
+
+### Bug Fixes
+
+- initial support for hover prop ([e2be6e9](https://github.com/jackleslie/html-styled/commit/e2be6e97bae48bb51bbb3df41f5d2f4a9d05b64d))
+
 ## 1.11.0 (2020-03-28)
 
 ### Features
