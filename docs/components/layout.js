@@ -8,7 +8,8 @@ import Button from "./button";
 const pages = [
   { page: "Getting started", href: "/getting-started" },
   { page: "Syntax", href: "/syntax" },
-  { page: "API", href: "/_api" },
+  { page: "HTML", href: "/html" },
+  { page: "CSS", href: "/css" },
 ];
 
 export default ({ center, title, next, children }) => (

@@ -1,9 +1,9 @@
 import React from "react";
 import { Layout } from "../../components";
-import MDXDocument from "./syntax.mdx";
+import MDXDocument from "./html.mdx";
 
 export default () => (
-  <Layout title="Syntax" next={{ title: "HTML", href: "/html" }}>
+  <Layout title="HTML" next={{ title: "CSS", href: "/css" }}>
     <MDXDocument />
   </Layout>
 );
