@@ -5,43 +5,58 @@
 ![npm](https://img.shields.io/npm/v/html-styled?color=red)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jackleslie/html-styled/Node%20CI?logo=github)
 
-## Getting started
+## Documentation
 
-Provides React components for HTML elements which allow you to use the [Styled System API](https://styled-system.com/api/).
+You can find the full documentation at [html-styled.now.sh](https://html-styled.now.sh), which is also built with `html-styled`! View the code in the `docs` folder in this repository.
 
+## Getting Started
+
+This package is for projects using React that allows you to write HTML
+elements in which you can pass responsive style props easily. Normally when we
+write and style HTML elements in React we use the standard style props as
+follows:
+
+```jsx
+<p style={{ color: "red", fontSize: "18px" }}>Hello world!</p>
 ```
-npm install html-styled styled-system styled-components
+
+The syntax is a little bit clunky, and gets a bit harder to read as we add
+more and more css rules. And if we wanted to make it responsive, e.g change
+the font size on smaller screens, we'd need to give it a class name and write
+some bulky CSS media queries.
+
+Using this package means that we get a nicer style props syntax, and can
+easily make this responsive using [Styled System's responsive style syntax](https://styled-system.com/responsive-styles).
+With this in mind, the example above becomes:
+
+```jsx
+<P color="red" fontSize={["16px", "18px"]}>Hello world!</P>`
 ```
 
-or
+Now instead of using the standard style prop we have a prop for every css
+property, e.g color and fontSize. If we want to make a property responsive we
+simply pass an array of strings instead of just one string, where each element
+in the array applies the rule to a certain screen size. In this example, the
+font size is 16px on small screens, and 18px on all larger screens. Notice
+that `<p>` becomes `<P>` - we'll discuss this in the next section.
+
+## Installation
+
+Install `html-styled` and its peer dependencies.
 
 ```
 yarn add html-styled styled-system styled-components
 ```
 
-## Example
+or
 
-The following is an example of a `p` element using `html-styled`
-
-```jsx
-import React from "react";
-import ReactDOM from "react-dom";
-import { P } from "html-styled";
-
-const App = () => (
-  <div>
-    <h1>Hello world!</h1>
-    <P color="red" p={[1, 2]}>
-      This is a paragraph element from html-styled. It is now red and has
-      responsive padding - easy!
-    </P>
-  </div>
-);
-
-ReactDOM.render(<App />, document.getElementById("root"));
+```
+npm install html-styled styled-system styled-components
 ```
 
-Whenever you want to use an HTML element, just import it from `html-styled` in uppercase and you can instantly use the `styled-system` style props!
+> ### What are peer dependencies?
+>
+> These are dependencies that we rely on, but instead of bundling them in our package we get you to install them separately. This keeps our package size down and allows you to install specific versions of each dependency if you need to.
 
 ## FAQ
 
