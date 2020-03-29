@@ -11,8 +11,8 @@ export default ({ inverted = false, ...props }) => {
         m={2}
         appearance="none"
         bg="transparent"
-        border="solid 2px #041B15"
-        color="#041B15"
+        border="solid 2px #28464B"
+        color="#28464B"
         borderRadius={5}
         fontSize={2}
         fontWeight={500}

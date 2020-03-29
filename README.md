@@ -42,18 +42,36 @@ in the array applies the rule to a certain screen size. In this example, the
 font size is 16px on small screens, and 18px on all larger screens. Notice
 that `<p>` becomes `<P>`.
 
+#### `WIP`
+
+Another benefit we get is access to direct CSS selector props. This means that
+we can add rules for selectors such as`:hover` directly
+through a prop in React. To change color, for example, on hover we do the
+following:
+
+```jsx
+<P color="red" color_hover="blue">
+  Hello world!
+</P>
+```
+
+By adding `_` after the CSS property followed by a selector
+name such as `hover` we get quick, direct access to
+selectors we want use don't have to write separate css or use bulky
+[template literals](https://styled-components.com/docs/basics#pseudoelements-pseudoselectors-and-nesting).
+
 ## Installation
 
 Install `html-styled` and its peer dependencies.
 
 ```
-yarn add html-styled styled-system styled-components
+yarn add html-styled styled-system @styled-system/css styled-components
 ```
 
 or
 
 ```
-npm install html-styled styled-system styled-components
+npm install html-styled styled-system @styled-system/css styled-components
 ```
 
 > ### What are peer dependencies?

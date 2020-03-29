@@ -47,6 +47,25 @@ import {
   discuss this in the next section.
 </Paragraph>
 
+<Paragraph>
+  Another benefit we get is access to direct CSS selector props. This means that
+  we can add rules for selectors such as <Code inline>{`:hover`}</Code> directly
+  through a prop in React. To change color, for example, on hover we do the
+  following:
+</Paragraph>
+
+<Code>{`<P color="red" color_hover="blue">Hello world!</P>`}</Code>
+
+<Paragraph>
+  By adding <Code inline>_</Code> after the CSS property followed by a selector
+  name such as <Code inline>{`hover`}</Code> we get quick, direct access to
+  selectors we want use don't have to write separate css or use bulky{" "}
+  <Anchor href="https://styled-components.com/docs/basics#pseudoelements-pseudoselectors-and-nesting">
+    template literals
+  </Anchor>
+  .
+</Paragraph>
+
 <Heading mt={5} mb={1}>
   Installation
 </Heading>
@@ -55,11 +74,15 @@ import {
   Install <Code inline>html-styled</Code> and its peer dependencies.
 </Paragraph>
 
-<Code>yarn add html-styled styled-system styled-components</Code>
+<Code>
+  yarn add html-styled styled-system @styled-system/css styled-components
+</Code>
 
 <Paragraph>or</Paragraph>
 
-<Code mb={4}>npm install html-styled styled-system styled-components</Code>
+<Code mb={4}>
+  npm install html-styled styled-system @styled-system/css styled-components
+</Code>
 
 <Info title="What are peer dependencies?">
   These are dependencies that we rely on, but instead of bundling them in our

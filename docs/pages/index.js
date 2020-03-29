@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { DIV, H3, SPAN } from "html-styled";
 import {
   Layout,
@@ -12,7 +14,7 @@ import {
 
 const Home = () => (
   <Layout center>
-    <Heading mt={[5, 6]} maxWidth={600} textAlign="center">
+    <Heading mt={5} pt={[0, 4]} maxWidth={600} textAlign="center">
       HTML for React with <SPAN color="#05668D">responsive style props</SPAN>
     </Heading>
     <Heading small textAlign="center" mt={[3, 1]} mb={5}>
@@ -24,6 +26,9 @@ const Home = () => (
         <Button>Get started</Button>
       </Link>
       <Button inverted href="https://github.com/jackleslie/html-styled">
+        <SPAN mr={1}>
+          <FontAwesomeIcon icon={faGithub} />
+        </SPAN>
         GitHub
       </Button>
     </DIV>
@@ -39,7 +44,7 @@ const Home = () => (
       flexWrap="wrap"
     >
       <DIV display="flex" flexDirection="column" m={2}>
-        <H3 color="#28464B" mb={0}>
+        <H3 color="#041B15" mb={0}>
           Simple <SPAN color="#05668D">style props</SPAN> for inline CSS
         </H3>
         <Paragraph maxWidth={400}>
@@ -49,14 +54,23 @@ const Home = () => (
         </Paragraph>
       </DIV>
       <DIV display="flex" flexDirection="column" m={2}>
-        <H3 color="#28464B" mb={0}>
-          Easily make an element{" "}
-          <SPAN color={["#05668D", "#28464B", "#05668D"]}>responsive</SPAN>
+        <H3 color="#041B15" mb={0}>
+          Easily make an element <SPAN color="#05668D">responsive</SPAN>
         </H3>
         <Paragraph maxWidth={400}>
           An easier way to make an element responsive; to change foreground
           color on different screens just add{" "}
           <Code inline>{`color={["red", "blue"]}`}</Code> as a prop.
+        </Paragraph>
+      </DIV>
+      <DIV display="flex" flexDirection="column" m={2}>
+        <H3 color="#041B15" mb={0}>
+          WIP: Work with <SPAN color="#05668D">selectors</SPAN> directly
+        </H3>
+        <Paragraph maxWidth={400}>
+          Enable rules with CSS selectors directly through a specific prop; to
+          change color on hover just add{" "}
+          <Code inline>{`color="red" color_hover="blue"`}</Code> as props.
         </Paragraph>
       </DIV>
     </DIV>
