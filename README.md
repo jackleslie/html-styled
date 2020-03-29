@@ -26,19 +26,21 @@ the font size on smaller screens, we'd need to give it a class name and write
 some bulky CSS media queries.
 
 Using this package means that we get a nicer style props syntax, and can
-easily make this responsive using [Styled System's responsive style syntax](https://styled-system.com/responsive-styles).
+easily make this responsive using [Styled System's responsive style](https://styled-system.com/responsive-styles) syntax.
 With this in mind, the example above becomes:
 
 ```jsx
-<P color="red" fontSize={["16px", "18px"]}>Hello world!</P>`
+<P color="red" fontSize={["16px", "18px"]}>
+  Hello world!
+</P>
 ```
 
 Now instead of using the standard style prop we have a prop for every css
-property, e.g color and fontSize. If we want to make a property responsive we
+property, e.g `color` and `fontSize`. If we want to make a property responsive we
 simply pass an array of strings instead of just one string, where each element
 in the array applies the rule to a certain screen size. In this example, the
 font size is 16px on small screens, and 18px on all larger screens. Notice
-that `<p>` becomes `<P>` - we'll discuss this in the next section.
+that `<p>` becomes `<P>`.
 
 ## Installation
 
