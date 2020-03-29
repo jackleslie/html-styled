@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.11.4 (2020-03-29)
+
+### Bug Fixes
+
+- don't use namespace syntax for hover ([1a5810a](https://github.com/jackleslie/html-styled/commit/1a5810a880e407e87549bd096207952f8c3258fc))
+
 ### 1.11.3 (2020-03-29)
 
 ### Bug Fixes
