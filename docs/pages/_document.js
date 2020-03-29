@@ -51,7 +51,6 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
       </Html>
     );
   }

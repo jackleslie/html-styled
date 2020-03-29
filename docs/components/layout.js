@@ -24,7 +24,7 @@ export default ({ center, title, next, children }) => (
         flexWrap="wrap"
         justifyContent="space-between"
       >
-        <DIV display="flex" flexDirection="column" mb={1} mr={3}>
+        <DIV display="flex" flexDirection="column" mb={2} mr={3}>
           <Link href="/">
             <Heading color="#041B15" cursor="pointer">
               html-styled
@@ -32,15 +32,11 @@ export default ({ center, title, next, children }) => (
           </Link>
         </DIV>
         {center ? (
-          <A
-            className="github-button"
-            href="https://github.com/jackleslie/html-styled"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star jackleslie/html-styled on GitHub"
-          >
-            Star
+          <A href="https://github.com/jackleslie/html-styled" mb={1}>
+            <img
+              alt="GitHub stars"
+              src="https://img.shields.io/github/stars/jackleslie/html-styled?style=social"
+            />
           </A>
         ) : null}
       </HEADER>
