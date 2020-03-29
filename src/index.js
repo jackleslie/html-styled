@@ -11,9 +11,10 @@ import {
   border,
   position,
   shadow,
+  css,
 } from "styled-system";
 import elements from "./elements";
-import css from "./css";
+import additionalCss from "./css";
 
 const output = elements.reduce((obj, element) => {
   const StyledElement = styled(element)(
@@ -27,7 +28,29 @@ const output = elements.reduce((obj, element) => {
     border,
     position,
     shadow,
-    css
+    additionalCss,
+    (props) => {
+      const config = Object.entries(props).reduce((obj, [key, value]) => {
+        if (key.endsWith(":hover")) {
+          const cssProperty = key.slice(0, -6);
+          const hoverProperties = obj["&:hover"];
+          const newHoverProperties = {
+            ...hoverProperties,
+            [cssProperty]: value,
+          };
+          return {
+            ...obj,
+            "&:hover": {
+              ...newHoverProperties,
+            },
+          };
+        }
+        return {
+          ...obj,
+        };
+      }, {});
+      return css(config);
+    }
   );
 
   return {
