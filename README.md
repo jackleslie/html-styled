@@ -23,7 +23,8 @@ follows:
 The syntax is a little bit clunky, and gets a bit harder to read as we add
 more and more css rules. And if we wanted to make it responsive, e.g change
 the font size on smaller screens, we'd need to give it a class name and write
-some bulky CSS media queries.
+some bulky CSS media queries. We also can't access selectors like `:hover` at all
+this way.
 
 Using this package means that we get a nicer style props syntax, and can
 easily make this responsive using [Styled System's responsive style](https://styled-system.com/responsive-styles) syntax.
@@ -58,7 +59,15 @@ following:
 By adding `_` after the CSS property followed by a selector
 name such as `hover` we get quick, direct access to
 selectors we want use don't have to write separate css or use bulky
-[template literals](https://styled-components.com/docs/basics#pseudoelements-pseudoselectors-and-nesting).
+[template literals](https://styled-components.com/docs/basics#pseudoelements-pseudoselectors-and-nesting). Taking this even further we can combine this with the responsive syntax:
+
+```jsx
+<P color="red" color_hover={["green", "blue"]}>
+  Hello world!
+</P>
+```
+
+Now when we hover on small screens the color is green, and on larger screens it is blue - no bulky CSS with media queries required and not a template literal in sight!
 
 ## Installation
 

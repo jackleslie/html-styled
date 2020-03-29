@@ -63,7 +63,15 @@ import {
   <Anchor href="https://styled-components.com/docs/basics#pseudoelements-pseudoselectors-and-nesting">
     template literals
   </Anchor>
-  .
+  . Taking this even further we can combine this with the responsive syntax:
+</Paragraph>
+
+<Code>{`<P color="red" color_hover={["green", "blue"]}>Hello world!</P>`}</Code>
+
+<Paragraph>
+  Now when we hover on small screens the color is green, and on larger screens
+  it is blue - no bulky CSS with media queries required and not a template
+  literal in sight!
 </Paragraph>
 
 <Heading mt={5} mb={1}>
