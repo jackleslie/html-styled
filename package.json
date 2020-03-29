@@ -13,7 +13,8 @@
     "build": "rollup -c",
     "release": "standard-version -a",
     "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix"
+    "lint:fix": "eslint ./src --fix",
+    "docs": "yarn --cwd docs dev"
   },
   "files": [
     "dist"
@@ -37,6 +38,7 @@
     "standard-version": "^7.1.0"
   },
   "peerDependencies": {
+    "@styled-system/css": "^5.1.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.0.1",
