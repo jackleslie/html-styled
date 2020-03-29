@@ -31,7 +31,7 @@ const output = elements.reduce((obj, element) => {
     additionalCss,
     (props) => {
       const config = Object.entries(props).reduce((obj, [key, value]) => {
-        if (key.endsWith(":hover")) {
+        if (key.endsWith("_hover")) {
           const cssProperty = key.slice(0, -6);
           const hoverProperties = obj["&:hover"];
           const newHoverProperties = {
