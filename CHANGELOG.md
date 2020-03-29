@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.11.2 (2020-03-29)
+
+### Bug Fixes
+
+- added peer dependency ([35637a1](https://github.com/jackleslie/html-styled/commit/35637a1db11b41b9e9b619e4d3e6752b72f5d827))
+
 ### 1.11.1 (2020-03-29)
 
 ### Bug Fixes
