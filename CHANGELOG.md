@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.12.1 (2020-03-30)
+
+### Bug Fixes
+
+- rollup error fixes ([20c62bd](https://github.com/jackleslie/html-styled/commit/20c62bde7a29371c71e977565c4139d110d2c47e))
+
 ## 1.12.0 (2020-03-30)
 
 ### Features
