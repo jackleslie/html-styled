@@ -35,7 +35,6 @@ export default ({ inverted = false, ...props }) => {
         fontWeight={500}
         href="/getting-started"
         textDecoration="none"
-        focusColor="red"
         {...props}
       />
     );

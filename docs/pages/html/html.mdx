@@ -7,9 +7,23 @@ import {
   Info,
   Anchor,
 } from "../../components";
+import elements from "./elements";
 
 <Heading mb={1}>Components</Heading>
 
 <Paragraph>
-  <Code inline>TODO: discuss HTML elements supported</Code>
+  We support all the HTML elements as documented in the{" "}
+  <Anchor href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
+    MDN web docs elements reference
+  </Anchor>
+  . We wrap each HTML element in our functionality and produce an API providing the
+  following components representing their corresponding HTML elements in uppercase:
 </Paragraph>
+
+<DIV display="flex" flexWrap="wrap">
+  {elements.map((element) => (
+    <Code inline m={1}>
+      {element.toUpperCase()}
+    </Code>
+  ))}
+</DIV>

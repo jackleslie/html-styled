@@ -42,3 +42,40 @@ import {
     html-styled
   </Code> components.
 </Info>
+
+<Heading mt={5} mb={1}>
+  Responsive style arrays
+</Heading>
+
+<Paragraph>
+  When we want to change a CSS rule on different screen sizes we use responsive
+  style props as follows:
+</Paragraph>
+
+<Code>{`<P color={["red", "blue"]}>Hello world!</P>`}</Code>
+
+<Paragraph>
+  This means that on small screens the foreground color is red, and on all
+  larger screen sizes the foreground color is blue. This is syntax provided by
+  our peer dependency <Code inline>styled-system</Code> - you can read more
+  about this syntax in their{" "}
+  <Anchor href="https://styled-system.com/responsive-styles">docs</Anchor>.
+</Paragraph>
+
+<Heading mt={5} mb={1}>
+  CSS selector props
+</Heading>
+
+<Paragraph>
+  When we want to use a CSS selector such as <Code inline>:hover</Code> we use
+  object syntax as follows:
+</Paragraph>
+
+<Code>{`<P color="red" hover={{ color: "blue" }}>Hello world!</P>`}</Code>
+
+<Paragraph>
+  This means that the foreground color is red, and on hover the foreground color
+  is blue. Normally to get access to selectors like this we need template
+  literals, but using this syntax keeps it similar to responsive style syntax
+  and gives us direct access to selectors as a top level prop.
+</Paragraph>
