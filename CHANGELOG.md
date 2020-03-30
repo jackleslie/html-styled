@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.12.0 (2020-03-30)
+
+### Features
+
+- new selector syntax, more selector support ([7f781b6](https://github.com/jackleslie/html-styled/commit/7f781b66670d97f38c34bff43b1589a15391c064))
+
 ### 1.11.4 (2020-03-29)
 
 ### Bug Fixes
