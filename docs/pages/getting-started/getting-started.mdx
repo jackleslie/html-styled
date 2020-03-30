@@ -17,7 +17,7 @@ import {
   follows:
 </Paragraph>
 
-<Code>{`<p style={{ color: 'red, fontSize: '18px' }}>Hello world!</p>`}</Code>
+<Code>{`<p style={{ color: "red", fontSize: "18px" }}>Hello world!</p>`}</Code>
 
 <Paragraph>
   The syntax is a little bit clunky, and gets a bit harder to read as we add
@@ -35,7 +35,7 @@ import {
   . With this in mind, the example above becomes:
 </Paragraph>
 
-<Code>{`<P color="red" fontSize={['16px', '18px']}>Hello world!</P>`}</Code>
+<Code>{`<P color="red" fontSize={["16px", "18px"]}>Hello world!</P>`}</Code>
 
 <Paragraph>
   Now instead of using the standard style prop we have a prop for every css
@@ -54,19 +54,19 @@ import {
   following:
 </Paragraph>
 
-<Code>{`<P color="red" color_hover="blue">Hello world!</P>`}</Code>
+<Code>{`<P color="red" hoverColor="blue">Hello world!</P>`}</Code>
 
 <Paragraph>
-  By adding <Code inline>_</Code> after the CSS property followed by a selector
-  name such as <Code inline>{`hover`}</Code> we get quick, direct access to
-  selectors we want use don't have to write separate css or use bulky{" "}
+  By adding a CSS selector name such as <Code inline>hover</Code> before a CSS
+  property we get quick, direct access to selectors we want to use and don't
+  have to write separate css or use bulky{" "}
   <Anchor href="https://styled-components.com/docs/basics#pseudoelements-pseudoselectors-and-nesting">
     template literals
   </Anchor>
   . Taking this even further we can combine this with the responsive syntax:
 </Paragraph>
 
-<Code>{`<P color="red" color_hover={["green", "blue"]}>Hello world!</P>`}</Code>
+<Code>{`<P color="red" hoverColor={["green", "blue"]}>Hello world!</P>`}</Code>
 
 <Paragraph>
   Now when we hover on small screens the color is green, and on larger screens

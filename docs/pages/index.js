@@ -70,7 +70,7 @@ const Home = () => (
         <Paragraph maxWidth={400}>
           Enable rules with CSS selectors directly through a specific prop; to
           change color on hover just add{" "}
-          <Code inline>{`color="red" color_hover="blue"`}</Code> as props.
+          <Code inline>{`color="red" hoverColor="blue"`}</Code> as props.
         </Paragraph>
       </DIV>
     </DIV>

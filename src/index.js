@@ -15,6 +15,7 @@ import {
 import { css } from "@styled-system/css";
 import elements from "./elements";
 import additionalCss from "./css";
+import selectors from "./selectors";
 
 const output = elements.reduce((obj, element) => {
   const StyledElement = styled(element)(
@@ -31,17 +32,20 @@ const output = elements.reduce((obj, element) => {
     additionalCss,
     (props) => {
       const config = Object.entries(props).reduce((obj, [key, value]) => {
-        if (key.endsWith("_hover")) {
-          const cssProperty = key.slice(0, -6);
-          const hoverProperties = obj["&:hover"];
-          const newHoverProperties = {
-            ...hoverProperties,
+        const cssProperty =
+          key.charAt(5).toLowerCase() + key.slice(6, key.length);
+        const cssSelector = key.slice(0, 5);
+
+        const styledSelector = selectors[cssSelector];
+        if (styledSelector) {
+          const styledSelectorProperties = {
+            ...obj[styledSelector],
             [cssProperty]: value,
           };
           return {
             ...obj,
-            "&:hover": {
-              ...newHoverProperties,
+            [styledSelector]: {
+              ...styledSelectorProperties,
             },
           };
         }
