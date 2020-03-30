@@ -32,19 +32,15 @@ const output = elements.reduce((obj, element) => {
     additionalCss,
     (props) => {
       const config = Object.entries(props).reduce((obj, [key, value]) => {
-        const cssProperty =
-          key.charAt(5).toLowerCase() + key.slice(6, key.length);
-        const cssSelector = key.slice(0, 5);
-
-        const styledSelector = selectors[cssSelector];
-        if (styledSelector) {
+        const cssSelector = selectors[key];
+        if (cssSelector) {
           const styledSelectorProperties = {
-            ...obj[styledSelector],
-            [cssProperty]: value,
+            ...obj[cssSelector],
+            ...value,
           };
           return {
             ...obj,
-            [styledSelector]: {
+            [cssSelector]: {
               ...styledSelectorProperties,
             },
           };

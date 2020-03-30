@@ -3238,10 +3238,10 @@ html-entities@^1.2.0:
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
   integrity sha1-DfKTUfByEWNRXfueVUPl9u7VFi8=
 
-html-styled@^1.11.4:
-  version "1.11.4"
-  resolved "https://registry.yarnpkg.com/html-styled/-/html-styled-1.11.4.tgz#fc36cc76d70c486688dd5f93e42a205e2e757a1b"
-  integrity sha512-N4Zu/aUN3893TPcCZ2AnIfeR/29a2y+CkNZyu66Bbf3n400/dx11mymg7or34jRy3fAJhSlPs91rvrG0utpS1A==
+html-styled@^1.12.1:
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/html-styled/-/html-styled-1.12.1.tgz#3c3c6718ca8daa2ef279c2eeff8ed1a988a22fce"
+  integrity sha512-xLU16WGmUomz7q3FYorCHfkfVX6pz7SM4k7vGjjpce+swkT6f5RQlraqRtMN7gFv9n2PcaYJDkqhQGAY92NCCg==
 
 html-void-elements@^1.0.0:
   version "1.0.5"

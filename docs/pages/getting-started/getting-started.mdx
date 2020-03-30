@@ -54,19 +54,19 @@ import {
   following:
 </Paragraph>
 
-<Code>{`<P color="red" hoverColor="blue">Hello world!</P>`}</Code>
+<Code>{`<P color="red" hover={{ color: "blue" }}>Hello world!</P>`}</Code>
 
 <Paragraph>
-  By adding a CSS selector name such as <Code inline>hover</Code> before a CSS
-  property we get quick, direct access to selectors we want to use and don't
-  have to write separate css or use bulky{" "}
+  By adding a CSS selector name such as <Code inline>hover</Code> as a prop we
+  get quick, direct access to selectors we want to use and don't have to write
+  separate css or use bulky{" "}
   <Anchor href="https://styled-components.com/docs/basics#pseudoelements-pseudoselectors-and-nesting">
     template literals
   </Anchor>
   . Taking this even further we can combine this with the responsive syntax:
 </Paragraph>
 
-<Code>{`<P color="red" hoverColor={["green", "blue"]}>Hello world!</P>`}</Code>
+<Code>{`<P color="red" hover={{ color: ["green", "blue"] }}>Hello world!</P>`}</Code>
 
 <Paragraph>
   Now when we hover on small screens the color is green, and on larger screens

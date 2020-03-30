@@ -68,9 +68,9 @@ const Home = () => (
           WIP: Work with <SPAN color="#05668D">selectors</SPAN> directly
         </H3>
         <Paragraph maxWidth={400}>
-          Enable rules with CSS selectors directly through a specific prop; to
+          Enable rules with CSS selectors directly through specific props; to
           change color on hover just add{" "}
-          <Code inline>{`color="red" hoverColor="blue"`}</Code> as props.
+          <Code inline>{`hover={{ color: "blue" }}`}</Code> as a prop.
         </Paragraph>
       </DIV>
     </DIV>

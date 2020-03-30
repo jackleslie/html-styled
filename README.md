@@ -51,17 +51,17 @@ through a prop in React. To change color, for example, on hover we do the
 following:
 
 ```jsx
-<P color="red" hoverColor="blue">
+<P color="red" hover={{ color: "blue" }}>
   Hello world!
 </P>
 ```
 
-By adding a CSS selector name such as `hover` before a CSS property we get quick, direct access to
+By adding a CSS selector name such as `hover` as a prop we get quick, direct access to
 selectors we want to use and don't have to write separate css or use bulky
 [template literals](https://styled-components.com/docs/basics#pseudoelements-pseudoselectors-and-nesting). Taking this even further we can combine this with the responsive syntax:
 
 ```jsx
-<P color="red" hoverColor={["green", "blue"]}>
+<P color="red" hover={{ color: ["green", "blue"] }}>
   Hello world!
 </P>
 ```
