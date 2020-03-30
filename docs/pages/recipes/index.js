@@ -1,9 +1,9 @@
 import React from "react";
 import { Layout } from "../../components";
-import MDXDocument from "./css.mdx";
+import MDXDocument from "./recipes.mdx";
 
 export default () => (
-  <Layout title="CSS" next={{ title: "Recipes", href: "/recipes" }}>
+  <Layout title="Recipes">
     <MDXDocument />
   </Layout>
 );

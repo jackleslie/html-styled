@@ -10,6 +10,7 @@ const pages = [
   { page: "Syntax", href: "/syntax" },
   { page: "HTML", href: "/html" },
   { page: "CSS", href: "/css" },
+  { page: "Recipes", href: "/recipes" },
 ];
 
 export default ({ center, title, next, children }) => (
