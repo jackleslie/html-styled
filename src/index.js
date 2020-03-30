@@ -12,7 +12,7 @@ import {
   position,
   shadow,
 } from "styled-system";
-import { css } from "@styled-system/css";
+import css from "@styled-system/css";
 import elements from "./elements";
 import additionalCss from "./css";
 import selectors from "./selectors";
