@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.14.0 (2020-03-30)
+
+### Features
+
+- support transition and update docs ([4e43931](https://github.com/jackleslie/html-styled/commit/4e43931c5e76d04a26438be8af58493b71bc1cf0))
+
 ## 1.13.0 (2020-03-30)
 
 ### Features

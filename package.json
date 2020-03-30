@@ -1,6 +1,6 @@
 {
   "name": "html-styled",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "description": "HTML for React with styled-system props",
   "source": "src/index.js",
   "main": "dist/umd/index.js",
