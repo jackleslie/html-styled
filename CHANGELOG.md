@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.13.0 (2020-03-30)
+
+### Features
+
+- more new selector syntax ([fabe96e](https://github.com/jackleslie/html-styled/commit/fabe96e4c82ed754770a4a1317247528c583c7cf))
+
 ### 1.12.1 (2020-03-30)
 
 ### Bug Fixes
