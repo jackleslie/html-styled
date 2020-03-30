@@ -7,9 +7,37 @@ import {
   Info,
   Anchor,
 } from "../../components";
+import { properties, selectors } from "../../data";
 
-<Heading mb={1}>CSS API</Heading>
+<Heading mb={1}>Properties</Heading>
 
 <Paragraph>
-  <Code inline>TODO: discuss CSS properties supported</Code>
+  We support the full <Code inline>styled-system</Code> CSS API as outlined in
+  their <Anchor href="https://styled-system.com/api/">docs</Anchor>. This
+  provides many of the most common properties needed for general development,
+  but we also support the following additional properties:
 </Paragraph>
+
+<DIV display="flex" flexWrap="wrap">
+  {properties.map((property) => (
+    <Code inline m={1}>
+      {property}
+    </Code>
+  ))}
+</DIV>
+
+<Heading mb={1} mt={5}>
+  Selectors
+</Heading>
+
+<Paragraph>
+  We currently support the following CSS selectors through direct props:
+</Paragraph>
+
+<DIV display="flex" flexWrap="wrap">
+  {selectors.map((selector) => (
+    <Code inline m={1}>
+      {selector}
+    </Code>
+  ))}
+</DIV>
