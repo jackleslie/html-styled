@@ -65,7 +65,7 @@ const Home = () => (
       </DIV>
       <DIV display="flex" flexDirection="column" m={2}>
         <H3 color="#041B15" mb={0}>
-          WIP: Work with <SPAN color="#05668D">selectors</SPAN> directly
+          Work with <SPAN color="#05668D">CSS selectors</SPAN> directly
         </H3>
         <Paragraph maxWidth={400}>
           Enable rules with CSS selectors directly through specific props; to

@@ -43,8 +43,6 @@ in the array applies the rule to a certain screen size. In this example, the
 font size is 16px on small screens, and 18px on all larger screens. Notice
 that `<p>` becomes `<P>`.
 
-#### `WIP`
-
 Another benefit we get is access to direct CSS selector props. This means that
 we can add rules for selectors such as`:hover` directly
 through a prop in React. To change color, for example, on hover we do the
