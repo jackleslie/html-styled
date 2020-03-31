@@ -1,8 +1,9 @@
 export const properties = [
+  "appearance",
   "cursor",
   "textDecoration",
-  "whiteSpace",
   "transition",
+  "whiteSpace",
 ];
 
-export const selectors = ["hover", "focus", "active"];
+export const selectors = ["active", "focus", "hover"];
