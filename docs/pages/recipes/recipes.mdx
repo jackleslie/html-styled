@@ -11,30 +11,8 @@ import { elements } from "../../data";
 
 <DIV display="flex" flexWrap="wrap" alignItems="stretch">
   <DIV m={3} display="flex" flexDirection="column" justifyContent="space-between">
-    <Heading>Modern input</Heading>
-    <Code >{`<LABEL 
-  color="#28464B" 
-  fontSize={1}
->
-  First name
-</LABEL>
-<INPUT
-  appearance="none"
-  p={3}
-  border="solid 1px"
-  borderColor="#ccc"
-  color="#041B15"
-  borderRadius={5}
-  fontSize={2}
-  transition="all 0.1s ease"
-  outline={0}
-  mt={1}
-  placeholder="First name"
-  hover={{ borderColor: "#999" }}
-  focus={{ outline: 0, borderColor: "#4392F1" }}
-/>
-  `}</Code>
-  <DIV display="flex" flexDirection="column">
+    <Heading mb={3}>Input</Heading>
+    <DIV display="flex" flexDirection="column">
     <LABEL color="#28464B" fontSize={1}>
       First name
     </LABEL>
@@ -54,32 +32,29 @@ import { elements } from "../../data";
       focus={{ outline: 0, borderColor: "#4392F1" }}
     />
     </DIV>
-  </DIV>
-
-  <DIV m={3} display="flex" flexDirection="column" justifyContent="space-between">
-    <Heading>Animated button</Heading>
-    <Code>{`<BUTTON
+    <Code mt={3}>{`<LABEL color="#28464B" fontSize={1}>
+  First name
+</LABEL>
+<INPUT
+  appearance="none"
   p={3}
-  bg="rgba(5, 102, 141, 0.9)"
-  borderColor="transparent"
-  color="#eee"
+  border="solid 1px"
+  borderColor="#ccc"
+  color="#041B15"
   borderRadius={5}
   fontSize={2}
-  cursor="pointer"
   transition="all 0.1s ease"
-  borderBottom="solid 4px #041B15"
-  top="2px"
-  hover={{ bg: "rgba(5, 102, 141, 0.8)" }}
-  active={{
-    bg: "rgba(5, 102, 141, 1)",
-    borderBottom: "solid 1px #041B15",
-    top: "0px",
-    outline: "none",
-  }}
->
-  Click me
-</BUTTON>
-  `}</Code>
+  outline={0}
+  mt={1}
+  placeholder="First name"
+  hover={{ borderColor: "#999" }}
+  focus={{ outline: 0, borderColor: "#4392F1" }}
+/>
+`}</Code>
+</DIV>
+
+  <DIV m={3} display="flex" flexDirection="column" justifyContent="space-between">
+    <Heading mb={3}>Button</Heading>
     <BUTTON
       p={3}
       bg="rgba(5, 102, 141, 0.9)"
@@ -89,17 +64,33 @@ import { elements } from "../../data";
       fontSize={2}
       cursor="pointer"
       transition="all 0.1s ease"
-      borderBottom="solid 4px #041B15"
       top="2px"
       hover={{ bg: "rgba(5, 102, 141, 0.8)" }}
       active={{
         bg: "rgba(5, 102, 141, 1)",
-        borderBottom: "solid 1px #041B15",
-        top: "0px",
         outline: "none",
       }}
     >
       Click me
     </BUTTON>
+    <Code mt={3}>{`<BUTTON
+  p={3}
+  bg="rgba(5, 102, 141, 0.9)"
+  borderColor="transparent"
+  color="#eee"
+  borderRadius={5}
+  fontSize={2}
+  cursor="pointer"
+  transition="all 0.1s ease"
+  top="2px"
+  hover={{ bg: "rgba(5, 102, 141, 0.8)" }}
+  active={{
+    bg: "rgba(5, 102, 141, 1)",
+    outline: "none",
+  }}
+>
+  Click me
+</BUTTON>`
+}</Code>
   </DIV>
 </DIV>

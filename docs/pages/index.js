@@ -1,7 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { DIV, H3, SPAN } from "html-styled";
 import {
   Layout,
@@ -26,9 +24,6 @@ const Home = () => (
         <Button>Get started</Button>
       </Link>
       <Button inverted href="https://github.com/jackleslie/html-styled">
-        <SPAN mr={1}>
-          <FontAwesomeIcon icon={faGithub} />
-        </SPAN>
         GitHub
       </Button>
     </DIV>
