@@ -5,6 +5,7 @@ const config = {
   textDecoration: true,
   whiteSpace: true,
   transition: true,
+  appearance: true,
 };
 
 export default system(config);
