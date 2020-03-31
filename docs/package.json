@@ -8,7 +8,7 @@
   "dependencies": {
     "@styled-system/css": "^5.1.5",
     "html-styled": "^1.15.0",
-    "next": "9.3.1",
+    "next": "9.3.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "styled-components": "^5.0.1",
