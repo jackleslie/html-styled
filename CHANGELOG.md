@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.15.0 (2020-03-31)
+
+### Features
+
+- support css appearance ([e5e8346](https://github.com/jackleslie/html-styled/commit/e5e83467efa25b1b3407554305dd92c1ed7eb8cc))
+
 ## 1.14.0 (2020-03-30)
 
 ### Features
