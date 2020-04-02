@@ -14,7 +14,7 @@ import {
 } from "styled-system";
 import css from "@styled-system/css";
 import elements from "./elements";
-import additionalCss from "./css";
+import additionalCss from "./additionalCss";
 import selectors from "./selectors";
 
 const output = elements.reduce((obj, element) => {
