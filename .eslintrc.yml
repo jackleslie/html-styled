@@ -11,6 +11,6 @@ rules:
   no-console: 0
   react/display-name: 0
 overrides:
-  - files: ["src/*.js", "docs/**/*.js"]
+  - files: ["src/**/*.js", "docs/**/*.js"]
     parserOptions:
       sourceType: module

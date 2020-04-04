@@ -11,11 +11,11 @@ import {
   border,
   position,
   shadow,
+  system,
 } from "styled-system";
 import css from "@styled-system/css";
-import elements from "./elements";
-import additionalCss from "./additionalCss";
-import selectors from "./selectors";
+import { elements } from "./data";
+import { propertiesConfig, selectorsConfig } from "./config";
 
 const output = elements.reduce((obj, element) => {
   const StyledElement = styled(element)(
@@ -29,10 +29,10 @@ const output = elements.reduce((obj, element) => {
     border,
     position,
     shadow,
-    additionalCss,
+    system(propertiesConfig),
     (props) => {
       const config = Object.entries(props).reduce((obj, [key, value]) => {
-        const cssSelector = selectors[key];
+        const cssSelector = selectorsConfig[key];
         if (cssSelector) {
           const styledSelectorProperties = {
             ...obj[cssSelector],
@@ -147,3 +147,5 @@ export const {
   VAR,
   WBR,
 } = output;
+
+export { elements, properties, selectors } from "./data";
