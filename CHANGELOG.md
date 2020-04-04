@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.17.0 (2020-04-04)
+
+### Features
+
+- export elements, properties & selectors ([7908b0d](https://github.com/jackleslie/html-styled/commit/7908b0d6e1c0e74b0d677861308b81c5da8b7ae6))
+
 ## 1.16.0 (2020-04-02)
 
 ### Features
